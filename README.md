@@ -20,8 +20,7 @@ Both scripts support restarting. If the backup is interrupted, simply run the sc
 
 | Script                     | Operating System |
 | -------------------------- | ---------------- |
-| `ccc-user-backup.bat`      | Windows 10 / 11  |
-| `ccc-macos-user-backup.sh` | macOS            |
+| | `ccc-macos-user-backup.sh` | macOS            |
 
 ---
 
