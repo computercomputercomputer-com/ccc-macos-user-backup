@@ -1,6 +1,6 @@
-# Computer Computer Computer - Simple User Backup Scripts
+# Computer Computer Computer - macOS User Backup Script
 
-Free backup scripts for **Windows** and **macOS** designed to help safely back up a user's data before a reinstall, migration or hardware replacement.
+Free macOS backup script designed to help safely back up a user's data before a reinstall, migration or hardware replacement.
 
 🌐 **Website:** https://computercomputercomputer.com
 
@@ -8,66 +8,34 @@ Free backup scripts for **Windows** and **macOS** designed to help safely back u
 
 ## Overview
 
-These scripts are designed to be simple enough for home users while still being useful for IT engineers and MSPs.
+This script is designed to be simple enough for home users while still being useful for IT engineers and MSPs.
 
-They automatically back up the current user's files to an external drive and avoid copying unnecessary cache and temporary files.
+It backs up the current macOS user's files to an external drive and avoids copying unnecessary cache and temporary files.
 
-Both scripts support restarting. If the backup is interrupted, simply run the script again. Only new or changed files will be copied.
+The script supports restarting. If the backup is interrupted, simply run the script again. Only new or changed files will be copied.
 
 ---
 
-# Included Scripts
+# Included Script
 
-| Script                     | Operating System |
-| -------------------------- | ---------------- |
-| | `ccc-macos-user-backup.sh` | macOS            |
+| Script | Operating System |
+| ------ | ---------------- |
+| `ccc-macos-user-backup.sh` | macOS |
 
 ---
 
 # Features
 
-* Automatically detects an external USB drive
+* Automatically detects an external drive
 * Allows you to choose another destination if required
 * Creates a structured backup folder
-* Includes OneDrive, Dropbox and Google Drive (Windows)
-* Includes iCloud Drive (macOS)
+* Includes iCloud Drive
 * Skips common cache and temporary files
 * Creates a backup log
 * Creates a backup summary
 * Can be cancelled with **CTRL+C**
 * Can safely be run again later
 * Copies only new or changed files
-
----
-
-# Windows
-
-The Windows script uses **Robocopy**, Microsoft's built-in file copy utility.
-
-### Backs up
-
-* Desktop
-* Documents
-* Downloads
-* Pictures
-* Videos
-* Music
-* OneDrive
-* Dropbox
-* Google Drive
-* Project folders
-* Other user-created files
-
-### Skips
-
-* Temporary files
-* Browser cache
-* Windows cache
-* Crash dumps
-* Log files
-* Thumbnails
-* Recycle Bin
-* Application cache folders
 
 ---
 
@@ -100,27 +68,14 @@ The macOS script uses **rsync**.
 
 # Progress
 
-During the backup the scripts display information including:
+During the backup the script displays information including:
 
 * Current file being copied
 * Transfer speed
 * Data copied
-* Estimated time remaining (where supported by the operating system)
+* Estimated time remaining where supported
 
 Large backups can take several hours depending on the amount of data and the speed of the destination drive.
-
----
-
-# Running the Windows Script
-
-1. Download `ccc-user-backup.bat`
-2. Plug in an external drive.
-3. Right-click the script.
-4. Select **Run as administrator**.
-5. The script will attempt to detect the backup drive automatically.
-6. Press **Enter** to use the detected drive or choose another.
-7. Wait for the backup to finish.
-8. Verify your files before wiping or reinstalling the computer.
 
 ---
 
@@ -128,13 +83,13 @@ Large backups can take several hours depending on the amount of data and the spe
 
 Open Terminal.
 
-Make the script executable.
+Make the script executable:
 
 ```bash
 chmod +x ccc-macos-user-backup.sh
 ```
 
-Run it.
+Run it:
 
 ```bash
 ./ccc-macos-user-backup.sh
@@ -154,9 +109,9 @@ Check the following:
 * Desktop
 * Downloads
 * Pictures
-* Videos or Movies
+* Movies
 * Music
-* OneDrive, Dropbox, Google Drive or iCloud Drive (if used)
+* iCloud Drive, if used
 * Business or project folders
 
 Open several files to confirm they are readable.
@@ -167,7 +122,7 @@ A backup is only a backup once you have confirmed your files are present.
 
 # Logs
 
-Both scripts create:
+The script creates:
 
 * Backup log
 * Backup summary
@@ -178,7 +133,7 @@ These can be used to troubleshoot any issues.
 
 # Disclaimer
 
-These scripts are provided free of charge without warranty.
+This script is provided free of charge without warranty.
 
 Always verify your backup before deleting, wiping or reinstalling any device.
 
@@ -198,4 +153,4 @@ Computer Computer Computer provides IT support, cyber security, Microsoft 365, c
 
 🌐 https://computercomputercomputer.com
 
-If you found these scripts useful, please consider giving the repository a ⭐.
+If you found this script useful, please consider giving the repository a ⭐.
